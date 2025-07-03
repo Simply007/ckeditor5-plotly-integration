@@ -1,0 +1,94 @@
+.plotly-chart-widget {
+	border: 2px solid #ddd;
+	border-radius: 8px;
+	padding: 10px;
+	margin: 10px 0;
+	background-color: #f9f9f9;
+	min-height: 320px;
+	position: relative;
+	display: block;
+}
+
+.plotly-chart-widget:hover {
+	border-color: #007cba;
+}
+
+.plotly-chart-widget.ck-widget_selected {
+	border-color: #007cba;
+}
+
+.plotly-chart {
+	min-height: 300px;
+	width: 100%;
+	display: block !important;
+	position: relative;
+	overflow: visible !important;
+	z-index: 1;
+}
+
+/* Ensure Plotly elements are visible */
+.plotly-chart .js-plotly-plot {
+	width: 100% !important;
+	height: 100% !important;
+	display: block !important;
+	visibility: visible !important;
+	opacity: 1 !important;
+}
+
+/* Plotly SVG elements */
+.plotly-chart .js-plotly-plot .plotly svg {
+	display: block !important;
+	visibility: visible !important;
+	opacity: 1 !important;
+}
+
+/* Fix potential CKEditor conflicts */
+.plotly-chart * {
+	box-sizing: border-box;
+}
+
+/* Ensure chart container has proper sizing */
+.plotly-chart-widget .plotly-chart {
+	height: 300px !important;
+	min-height: 300px !important;
+}
+
+.plotly-chart-pending {
+	background: #f0f0f0;
+	min-height: 300px;
+	position: relative;
+}
+
+.plotly-chart-placeholder {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 300px;
+	color: #666;
+	font-size: 14px;
+	text-align: center;
+}
+
+.plotly-chart-placeholder::before {
+	content: "📊 ";
+	font-size: 24px;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.plotly-chart-title {
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.plotly-chart-widget .plotly-chart-title {
+	color: #333;
+}
+
+.plotly-chart-widget .plotly-chart-content {
+	background: white;
+	border-radius: 4px;
+	padding: 5px;
+}

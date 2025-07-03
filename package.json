@@ -1,0 +1,21 @@
+{
+  "name": "ckeditor5-plotly-integration",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "ckeditor5": "^45.2.1",
+    "plotly.js": "^2.35.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.53.2",
+    "@types/node": "^24.0.4",
+    "puppeteer": "^24.11.2",
+    "typescript": "^5.8.3",
+    "vite": "^5.0.0"
+  }
+}

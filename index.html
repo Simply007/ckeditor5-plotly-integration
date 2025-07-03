@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>CKEditor 5 with Plotly.js Integration</title>
+		<link rel="icon" type="image/png" href="https://ckeditor.com/assets/images/favicons/32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="https://ckeditor.com/assets/images/favicons/96x96.png" sizes="96x96">
+		<link rel="apple-touch-icon" type="image/png" href="https://ckeditor.com/assets/images/favicons/120x120.png" sizes="120x120">
+		<link rel="apple-touch-icon" type="image/png" href="https://ckeditor.com/assets/images/favicons/152x152.png" sizes="152x152">
+		<link rel="apple-touch-icon" type="image/png" href="https://ckeditor.com/assets/images/favicons/167x167.png" sizes="167x167">
+		<link rel="apple-touch-icon" type="image/png" href="https://ckeditor.com/assets/images/favicons/180x180.png" sizes="180x180">
+		<link rel="stylesheet" href="./style.css">
+		<link rel="stylesheet" href="./dist/style.css">
+	</head>
+	<body>
+		<div class="main-container">
+			<div style="margin-bottom: 20px; padding: 10px; background: #f0f0f0; border-radius: 5px;">
+				<h3>🔧 Debug Tools</h3>
+				<button id="debug-insert-chart" style="margin: 5px; padding: 10px; background: #007cba; color: white; border: none; border-radius: 3px;">
+					Insert Test Chart Directly
+				</button>
+				<button id="debug-check-dom" style="margin: 5px; padding: 10px; background: #28a745; color: white; border: none; border-radius: 3px;">
+					Check DOM State
+				</button>
+				<button id="debug-create-external-chart" style="margin: 5px; padding: 10px; background: #dc3545; color: white; border: none; border-radius: 3px;">
+					Create External Chart
+				</button>
+				<button id="debug-compare-html" style="margin: 5px; padding: 10px; background: #ffc107; color: black; border: none; border-radius: 3px;">
+					Compare HTML Structure
+				</button>
+			</div>
+			
+			<!-- External Plotly chart for comparison -->
+			<div style="margin-bottom: 20px; padding: 10px; background: #fff; border: 2px solid #28a745; border-radius: 5px;">
+				<h3>📊 External Plotly Chart (Reference)</h3>
+				<div id="external-chart" style="width: 100%; height: 300px; border: 1px solid #ccc;"></div>
+			</div>
+			<div class="editor-container editor-container_classic-editor" id="editor-container">
+				<div class="editor-container__editor"><div id="editor"></div></div>
+			</div>
+		</div>
+		<script type="module" src="src/main.ts"></script>
+
+	</body>
+</html>
